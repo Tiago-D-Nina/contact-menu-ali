@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-size:16px;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+body{
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*header{
+    background-image: url('assets/img/madeiraverdemais.jpg');
+    background-size:cover;
+    background-position: 52% center ;
+}*/
+header, .layer{
+    height: 70vh;
+    width: 110%;
+    clip-path: polygon(0 0, 100% 0, 100% 68%, 0 60%);
+    background: linear-gradient(120deg, rgb(1, 41, 26) 0%, rgba(1, 87, 43) 100%);
+}
+.layer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: top;
+    justify-content: left;
+    overflow: hidden;
+    /*background-color: rgba(0, 29, 18, 0.507);*/
+}
+.avatar{
+    width: 400px;
+    filter: drop-shadow(
+        8px 0px 12px rgba(0, 0, 0, 0.719)
+    );
+    
+}
+.container{
+    margin-top: -30vh;
+    width: 85%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+
+}
+.divButton{  
+    border-radius: 10px;
+    background: #e0e0e0;
+    width: 100%;
+    box-shadow:  6px 6px 14px #bebebe,
+    -6px -6px 14px #ffffff;
+}
+.button{
+    gap: 50px;
+    color: #333;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 90px;
+    width: 100%;
+    border-radius: 10px;
+    background: #e0e0e0;
+}
+.button h2{
+    font-size: 20px;
+}
+.icon-button{
+    margin-left: -80px;
+    width: 45px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  6px 6px 12px #bebebe,
+             -6px -6px 12px #ffffff;
+
+}
